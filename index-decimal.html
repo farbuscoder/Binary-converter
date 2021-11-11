@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="main-container" class="main-container">
+      <div class="header">
+        <img src="./images/binary.png" alt="binary_icon" />
+      </div>
+      <h1>Binary converter</h1>
+      <p>Enter a binary to convert it to decimal or swap it</p>
+      <div class="input-container">
+        <div class="second-container">
+          <div id="binary" class="decimal"><p>Decimal</p></div>
+          <div class="input-one">
+            <input type="number" id="input-one" placeholder="Enter a value" />
+          </div>
+        </div>
+        <div class="btns">
+          <a href="index.html"
+            ><button id="swap-btn"><i class="fas fa-sync-alt"></i></button
+          ></a>
+          <button id="convert-btn">Convert</button>
+        </div>
+        <div class="second-container">
+          <div id="decimal" class="decimal"><p>Binary</p></div>
+          <div class="input-two">
+            <input type="number" id="input-two" placeholder="Enter a value" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/index-decimal.js"></script>
+  </body>
+</html>

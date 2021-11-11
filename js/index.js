@@ -4,6 +4,7 @@ const input_one = document.getElementById("input-one");
 const input_two = document.getElementById("input-two");
 const swap_btn = document.getElementById("swap-btn");
 const convert_btn = document.getElementById("convert-btn");
+const clear_btn = document.getElementById("clear-btn");
 
 //Binary to decimal
 
@@ -29,6 +30,12 @@ const binaryToDecimal = () => {
     return decimal;
   }
 };
+
+//Clear
+function clearFunction() {
+  input_one.value = "";
+  input_two.value = "";
+}
 
 //Decimal to binary
 
@@ -60,15 +67,8 @@ const decimalToBinary = () => {
 
 decimalToBinary();
 
-//Change binary to decimal
-function changeDecimal() {
-  decimal.innerHTML = `<p>Binary</p>`;
-}
-
-//Change decimal to binary
-function changeBinary() {
-  decimal;
-}
 //Event listeners
 
 convert_btn.addEventListener("click", binaryToDecimal);
+
+clear_btn.addEventListener("click", clearFunction);

@@ -119,3 +119,10 @@ h1 {
   color: white;
   font-size: 20px;
 }
+
+.btns #clear-btn {
+  cursor: pointer;
+  background-color: #36827f;
+  color: white;
+  font-size: 20px;
+}

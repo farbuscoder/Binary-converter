@@ -4,6 +4,7 @@ const input_one = document.getElementById("input-one");
 const input_two = document.getElementById("input-two");
 const swap_btn = document.getElementById("swap-btn");
 const convert_btn = document.getElementById("convert-btn");
+const clear_btn = document.getElementById("clear-btn");
 
 //Decimal to binary
 
@@ -36,8 +37,16 @@ const decimalToBinary = () => {
   console.log(binary);
 };
 
+//Clear
+function clearFunction() {
+  input_one.value = "";
+  input_two.value = "";
+}
+
 decimalToBinary();
 
 //Event listeners
 
 convert_btn.addEventListener("click", decimalToBinary);
+
+clear_btn.addEventListener("click", clearFunction);

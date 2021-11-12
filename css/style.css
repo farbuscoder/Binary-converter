@@ -31,6 +31,18 @@ h1 {
   color: #36827f;
 }
 
+@media (max-width: 600px) {
+  .header-p p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 35px;
+  }
+}
+
 .second-container {
   display: flex;
   flex-direction: row;
@@ -65,6 +77,24 @@ h1 {
   align-items: center;
   color: azure;
   font-size: 20px;
+}
+
+@media (max-width: 300px) {
+  #decimal {
+    width: 60px;
+    font-size: 15px;
+  }
+
+  #binary {
+    width: 60px;
+    font-size: 15px;
+  }
+}
+
+@media (max-height: 450px) {
+  body {
+    overflow-y: scroll;
+  }
 }
 
 .input-one {
@@ -112,6 +142,8 @@ h1 {
   background-color: #36827f;
   color: white;
   font-size: 20px;
+  border-radius: 50%;
+  border: none;
 }
 
 .btns #convert-btn {
@@ -119,6 +151,16 @@ h1 {
   background-color: #36827f;
   color: white;
   font-size: 20px;
+  border: none;
+  border-radius: 10px;
+}
+
+.btns #convert-btn:hover {
+  background-color: #538684;
+}
+
+.btns #swap-btn:hover {
+  background-color: #538684;
 }
 
 .btns #clear-btn {
@@ -126,4 +168,10 @@ h1 {
   background-color: #36827f;
   color: white;
   font-size: 20px;
+  border-radius: 10px;
+  border: none;
+}
+
+.btns #clear-btn:hover {
+  background-color: #538684;
 }

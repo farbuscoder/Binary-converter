@@ -35,6 +35,7 @@ const decimalToBinary = () => {
   input_two.value = binary;
 
   console.log(binary);
+  return binary;
 };
 
 //Clear

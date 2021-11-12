@@ -48,8 +48,6 @@ function clearFunction() {
   input_two.value = "";
 }
 
-decimalToBinary();
-
 //Event listeners
 
 convert_btn.addEventListener("click", decimalToBinary);

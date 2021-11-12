@@ -13,29 +13,33 @@ const decimalToBinary = () => {
   let count = number.toString();
   let array = [];
 
-  for (let i = 2; i <= number; i = i) {
-    array.push((number = number / i));
-    console.log(number);
-  }
-
-  const newArray = array.map((digit) => Math.floor((digit * 2) % 2));
-  console.log(newArray);
-
-  if (newArray.length <= array.length) {
-    newArray.push(1);
-    console.log(newArray);
+  if (input_one.value == 0) {
+    input_two.value = 0;
   } else {
-    console.log("do nothing");
+    for (let i = 2; i <= number; i = i) {
+      array.push((number = number / i));
+      console.log(number);
+    }
+
+    const newArray = array.map((digit) => Math.floor((digit * 2) % 2));
+    console.log(newArray);
+
+    if (newArray.length <= array.length) {
+      newArray.push(1);
+      console.log(newArray);
+    } else {
+      console.log("do nothing");
+    }
+
+    console.log(newArray);
+
+    const binary = newArray.reverse().join("");
+
+    input_two.value = binary;
+
+    console.log(binary);
+    return binary;
   }
-
-  console.log(newArray);
-
-  const binary = newArray.reverse().join("");
-
-  input_two.value = binary;
-
-  console.log(binary);
-  return binary;
 };
 
 //Clear
